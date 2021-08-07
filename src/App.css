@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.products img {
+  width: 100%;
+}
+
+.product {
+  padding: 20px;
+}
+
+header {
+  background-color: pink;
+  height: 70px;
+  padding-top: 20px;
+}
