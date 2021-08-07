@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Navbar from './components/Navbar/navbar';
 
 const App = () => {
   const [products, SetProducts] =useState([]);
@@ -16,7 +17,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <p>Apple</p>
+      <Navbar />
       <button onClick={fetchProducts}>Click to get products</button>
       <p>{products.length}</p>
     </div>
