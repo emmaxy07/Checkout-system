@@ -4,7 +4,8 @@ import Navbar from './components/Navbar/navbar';
 import ProductList from './components/Product-list/product-list';
 
 const App = () => {
-  const [products, SetProducts] =useState([]);
+  const [products, setProducts] =useState([]);
+  const [cartItems, setCartItems] =useState([]);
 
   useEffect(() => {
     fetchProducts();
@@ -13,13 +14,12 @@ const App = () => {
   function fetchProducts() {
     fetch('https://fakestoreapi.com/products')
       .then(res => res.json())
-      .then(productsData => SetProducts(productsData));
+      .then(productsData => setProducts(productsData));
   }
 
   return (
     <div className="App">
-      <Navbar />
-      <button onClick={fetchProducts}>Click to get products</button>
+      <Navbar noOfItemsIncart={cartItems.length} />
       <ProductList products={products} />
       {/* <Cart /> */}
     </div>
