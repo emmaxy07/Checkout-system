@@ -1,11 +1,16 @@
 import React from 'react';
+import Product from '../product/product';
 import './product-list.css';
 
 
-function ProductList () {
+function ProductList ({products}) {
 	return (
 		<div className="product-list">
-			<p>Products are here</p>
+			{
+				products.map(product =>
+					<Product key={product.id} product={product}/>
+				)
+			}
 		</div>
 	)
 }

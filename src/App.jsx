@@ -20,7 +20,8 @@ const App = () => {
     <div className="App">
       <Navbar />
       <button onClick={fetchProducts}>Click to get products</button>
-      <ProductList />
+      <ProductList products={products} />
+      {/* <Cart /> */}
     </div>
   )
 };
