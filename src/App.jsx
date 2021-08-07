@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/navbar';
+import ProductList from './components/Product-list/product-list';
 
 const App = () => {
   const [products, SetProducts] =useState([]);
@@ -19,7 +20,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <button onClick={fetchProducts}>Click to get products</button>
-      <p>{products.length}</p>
+      <ProductList />
     </div>
   )
 };
