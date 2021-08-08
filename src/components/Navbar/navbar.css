@@ -2,16 +2,17 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	cursor: pointer;
-
 	padding: 1rem 2rem;
 }
 
-.cart-container {
+.navbar svg {
+	cursor: pointer;
+}
+.cart-icon {
 	position: relative;
 }
 
-.cart-container p {
+.cart-icon p {
 	position: absolute;
 	background-color: teal;
 	color: white;

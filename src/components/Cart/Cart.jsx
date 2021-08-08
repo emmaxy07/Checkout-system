@@ -17,11 +17,11 @@ function Cart ({cartItems, showModal, onClose}) {
 				<div className="cart-body">
 					{
 						cartItems.length ?
-						cartItems.map(({id, title, price}) =>
+						cartItems.map(({id, title, price, quantity}) =>
 							<div key={id} className="cart-item">
 								<p className="title">{title}</p>
 								<p>${price}</p>
-								<p>2</p>
+								<p>{quantity}</p>
 							</div>
 						)
 						:
