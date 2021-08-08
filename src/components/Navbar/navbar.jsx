@@ -2,9 +2,9 @@ import React from 'react';
 import './navbar.css';
 
 
-function Navbar ({noOfItemsIncart}) {
+function Navbar ({noOfItemsIncart, onOpen}) {
 	return (
-		<nav className="navbar">
+		<nav className="navbar" onClick={onOpen}>
 			<h3>Navbar</h3>
 			<div className="cart-container">
 				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">

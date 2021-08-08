@@ -1,14 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Product from '../product/product';
 import './product-list.css';
 
 
-function ProductList ({products}) {
-	const [cartItems, setCartItems] =useState([]);
-
-	function updateCart(product) {
-		setCartItems([...cartItems, product]);
-	}
+function ProductList ({products, updateCart}) {
 
 	return (
 		<div className="product-list">
@@ -18,7 +13,6 @@ function ProductList ({products}) {
 				)
 			}
 
-			<p>{cartItems.length}</p>
 		</div>
 	)
 }

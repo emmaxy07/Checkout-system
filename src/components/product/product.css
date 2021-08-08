@@ -14,15 +14,11 @@
 	height: 200px;
 }
 
-.product button {
-	padding: 8px 16px;
-	border-radius: 4px;
-	background-color: rgb(46, 187, 187);
-	color: white;
-	border: 1px solid rgb(46, 187, 187);
+.product h6 {
+	width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+	text-align: center;
 }
 
-.product button:hover {
-	background-color: teal;
-	border-color: teal;
-}
