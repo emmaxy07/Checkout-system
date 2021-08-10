@@ -21,7 +21,7 @@ const App = () => {
 
   useEffect(() => {
     fetchProducts();
-  }, [productToAdd]);
+  }, []);
 
   // useEffect(() => {
   //   const cartItems = useProcessCartItemsData(productToAdd);
